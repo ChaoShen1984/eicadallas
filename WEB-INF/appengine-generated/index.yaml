@@ -1,0 +1,46 @@
+indexes:
+- kind: "Reservation"
+  ancestor: yes
+  properties:
+  - name: "Reservation_ID"
+    direction: asc
+  - name: "Customer_FirstName"
+    direction: asc
+  - name: "Customer_LastName"
+    direction: asc
+  - name: "Customer_Phone"
+    direction: asc
+  - name: "Reservation_Year"
+    direction: asc
+  - name: "Reservation_Month"
+    direction: asc
+  - name: "Reservation_Date"
+    direction: asc
+  - name: "Reservation_FromTime"
+    direction: asc
+  - name: "Reservation_ToTime"
+    direction: asc
+  - name: "Reservation_Condition"
+    direction: asc
+- kind: "Reservation"
+  ancestor: yes
+  properties:
+  - name: "Reservation_Date"
+    direction: asc
+  - name: "Reservation_Month"
+    direction: asc
+  - name: "Reservation_Year"
+    direction: asc
+  - name: "Reservation_ToTime"
+    direction: asc
+- kind: "Reservation"
+  ancestor: yes
+  properties:
+  - name: "Reservation_Date"
+    direction: asc
+  - name: "Reservation_Month"
+    direction: asc
+  - name: "Reservation_Year"
+    direction: asc
+  - name: "Reservation_FromTime"
+    direction: asc

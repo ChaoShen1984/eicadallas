@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datastore-indexes
+    autoGenerate="true">
+  <datastore-index kind="Reservation" ancestor="true">
+    <property name="Reservation_ID" direction="asc" />
+    <property name="Customer_FirstName" direction="asc" />
+    <property name="Customer_LastName" direction="asc" />
+    <property name="Customer_Phone" direction="asc" />
+    <property name="Reservation_Year" direction="asc" />
+    <property name="Reservation_Month" direction="asc" />
+    <property name="Reservation_Date" direction="asc" />
+    <property name="Reservation_FromTime" direction="asc" />
+    <property name="Reservation_ToTime" direction="asc" />
+    <property name="Reservation_Condition" direction="asc" />
+  </datastore-index>
+</datastore-indexes>

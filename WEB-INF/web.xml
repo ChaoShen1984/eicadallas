@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>EICA</servlet-name>
+		<servlet-class>com.chao.EICA.EICAServlet</servlet-class>
+	</servlet>
+	<!-- JSPC servlet mappings start -->
+
+    <servlet>
+        <servlet-name>org.apache.jsp.reservationInfo_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.reservationInfo_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.thankyou_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.thankyou_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.reservation_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.reservation_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.store_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.store_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.email_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.email_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.reservationInfo_jsp</servlet-name>
+        <url-pattern>/reservationInfo.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.thankyou_jsp</servlet-name>
+        <url-pattern>/thankyou.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.reservation_jsp</servlet-name>
+        <url-pattern>/reservation.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.store_jsp</servlet-name>
+        <url-pattern>/store.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.email_jsp</servlet-name>
+        <url-pattern>/email.jsp</url-pattern>
+    </servlet-mapping>
+
+<!-- JSPC servlet mappings end -->
+
+<servlet-mapping>
+		<servlet-name>EICA</servlet-name>
+		<url-pattern>/eica</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>com.chao.EICA.SearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Add</servlet-name>
+		<servlet-class>com.chao.EICA.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchForDelete</servlet-name>
+		<servlet-class>com.chao.EICA.SearchForDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchForDelete</servlet-name>
+		<url-pattern>/searchfordelete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>com.chao.EICA.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+ <servlet>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+  <init-param>
+   <param-name>services</param-name>
+   <param-value/>
+  </init-param>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>SystemServiceServlet</servlet-name>
+  <url-pattern>/_ah/spi/*</url-pattern>
+ </servlet-mapping>
+</web-app>
